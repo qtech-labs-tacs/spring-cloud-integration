@@ -1,0 +1,31 @@
+app:
+  name: api-gateway
+  port: 8084
+  nodePort: 32001 
+  replicas: 1
+  env: dev
+  namespace: dev
+  container:
+   image: 
+     name: api-gateway
+     version: 1
+     pullPolicy: IfNotPresent
+   serviceAccount: service-account-for-dev-namespace
+  computeResources:
+   limits:
+     cpu: 0.2
+     memory: 100Mi
+   requests:
+     cpu: 0.2
+     memory: 100Mi
+    
+    
+hpa:
+  enabled: false
+  minReplicas: 1
+  maxReplicas: 2
+  cpu:
+   averageUtilization: 150
+  memory:
+   averageValue: 400Mi 
+   

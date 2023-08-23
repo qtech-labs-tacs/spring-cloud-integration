@@ -7,6 +7,7 @@ import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 import org.springframework.core.env.Environment;
 
 
@@ -14,6 +15,7 @@ import org.springframework.core.env.Environment;
 
 @SpringBootApplication
 @EnableDiscoveryClient
+@EnableFeignClients
 public class Microservice1Application implements CommandLineRunner{
 
     private static final Logger logger = LoggerFactory.getLogger(Microservice1Application.class);
