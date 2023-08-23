@@ -13,8 +13,8 @@
 	<artifactId>spring-cloud-integration</artifactId>
 	<version>1.0</version>
 	
-	<name>microservices-module</name>
-	<description>microservices-module</description>
+	<name>spring-cloud-integration</name>
+	<description>spring-cloud-integration</description>
 	
 	<packaging>pom</packaging>
 
