@@ -5,7 +5,7 @@
 
 	<parent>
 		<groupId>com.yagnaiq</groupId>
-		<artifactId>microservices-module</artifactId>
+		<artifactId>spring-cloud-integration</artifactId>
 		<version>1.0</version>
 	</parent>
 
