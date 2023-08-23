@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+
+kind: ReplicaSet
+
+metadata: 
+  name: microservice-1
+  namespace: yagnaiq
+
+spec:
+  replicas: 3
+
+  selector: 
+    matchLabels: 
+     app: microservice-1
+  
+  template:  # template for the pods
+    metadata:
+     labels:
+        app: microservice-1
+    spec: 
+      containers: 
+       - name: microservice-1
+         image: microservice-1:1.0
+     

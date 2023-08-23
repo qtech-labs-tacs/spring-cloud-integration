@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: ConfigMap
+metadata: 
+  name: {{ .Values.app.name }}-config-map
+  namespace: {{ .Values.app.namespace }}
+  labels:
+    env: {{ .Values.app.namespace }}
+data:
+  custom.message: "Hello World from config map - microservice-1-config-map" 
+ 
+  

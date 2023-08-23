@@ -1,0 +1,15 @@
+apiVersion: v1
+
+kind: Pod
+
+metadata: 
+  name: microservice-1
+  namespace: yagnaiq
+  labels:
+    app: microservice
+
+spec:
+  containers: 
+   - name: microservice-1
+     image: microservice-1:1.0
+     

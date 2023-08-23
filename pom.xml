@@ -49,6 +49,10 @@
 		</dependency>
 		
 		
+		
+		
+		
+		
 	</dependencies>
 
 	<build>
@@ -74,7 +78,6 @@
 		<module>microservice-2</module>
 		<module>microservice-3</module>
 		<module>api-gateway</module>
-		<module>common</module>
 		<module>discovery-service</module>
 	</modules>
 
